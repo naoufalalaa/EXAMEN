@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif!important;
+}
+nav a,nav a:hover{
+    color: inherit;
+    text-decoration: inherit;
+}
+.uk-card-footer{
+    position: sticky;
+    background-color: #ecd9ff;
+    bottom: 0px!important;
+}
+.uk-card{
+    border-top: 10px solid #bd96e4;
+}
