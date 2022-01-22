@@ -3,7 +3,7 @@ var router = express.Router();
 //var fs = require('fs')
 const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
-
+// /movies?page=xx
 router.get('/:page?', async function(req, res, next) {
     const page = req.query.page ? parseInt(req.query.page) : 1;
     const take = req.query.take ? parseInt(req.query.take) : 10;
@@ -11,7 +11,7 @@ router.get('/:page?', async function(req, res, next) {
     const all = await prisma.movies.findMany()
     const movies = await prisma.movies.findMany({
         skip,
-        take: take,
+        take,
     });
     console.log(req.query.page)
     res.status(200).send({
