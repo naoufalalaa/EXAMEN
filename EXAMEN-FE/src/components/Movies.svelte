@@ -69,6 +69,7 @@
             {#each {length : pages} as _,i }
                 <li><a on:click|preventDefault="{() => {gotoPage(i+1)}}">{i+1}</a></li>
             {/each}
+
         <li><a href=""><span uk-pagination-next></span></a></li>
     </ul>
 </main>

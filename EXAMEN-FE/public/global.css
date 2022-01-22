@@ -13,14 +13,4 @@ nav a,nav a:hover{
 }
 .uk-card{
     border-top: 10px solid #bd96e4;
-    cursor: pointer;
-    transition: all ease 1000ms;
-}
-.uk-card *{
-    transition: all ease 1000ms;
-
-}
-.uk-card:hover *{
-    padding: 10px;
-    transition: all ease 1000ms;
 }
