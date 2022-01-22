@@ -6,12 +6,12 @@ const prisma = new PrismaClient()
 router.get('/',(req,res)=>{
     res.send("NO movie")
 })
-
+// /movie/?id=xuaiudo
 router.get('/:id', async function(req, res, next) {
     const id = req.params.id
     const movie = await prisma.movies.findUnique({
         where : {
-            id: id
+            id 
         }
     });
     res.status(200).send(
